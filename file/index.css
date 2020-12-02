@@ -1,0 +1,116 @@
+.ele img {
+  width: 100%;
+  height: 100%;
+}
+.ele > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0px;
+  box-shadow: black 0px 0px 0px;
+}
+.ele31 {
+  width: 346.875px;
+  height: 121.875px;
+  left: 14.4773px;
+  top: 401.409px;
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.ele31 > div {
+  animation: 1000ms linear 1500ms 1 normal both running zoomIn;
+}
+.ele32 {
+  width: 21.0938px;
+  height: 21.6797px;
+  left: 263.501px;
+  top: 498.088px;
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.ele32 > div {
+  animation: 1000ms linear 0ms infinite normal both running fade;
+}
+.ele33 {
+  width: 24.0234px;
+  height: 22.8516px;
+  left: 221.313px;
+  top: 497.502px;
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.ele33 > div {
+  animation: 1000ms linear 0ms infinite normal both running fade;
+}
+.ele34 {
+  width: 23.4375px;
+  height: 22.2656px;
+  left: 180.884px;
+  top: 497.502px;
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.ele34 > div {
+  animation: 1000ms linear 0ms infinite normal both running fade;
+}
+.ele35 {
+  width: 24.0234px;
+  height: 22.8516px;
+  left: 139.868px;
+  top: 497.502px;
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.ele35 > div {
+  animation: 1000ms linear 0ms infinite normal both running fade;
+}
+.ele36 {
+  width: 24.0234px;
+  height: 22.8516px;
+  left: 98.8523px;
+  top: 497.502px;
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.ele36 > div {
+  animation: 1000ms linear 0ms infinite normal both running fade;
+}
+.ele37 {
+  width: 52.1484px;
+  height: 46.2891px;
+  left: 161.548px;
+  top: 345.745px;
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.ele37 > div {
+  animation: 2000ms linear 0ms infinite normal both running scaleDown;
+}
+.ele38 {
+  width: 18.1641px;
+  height: 16.9922px;
+  left: 179.126px;
+  top: 358.049px;
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.ele38 > div {
+  animation: 2000ms linear 0ms infinite normal both running scaleDown;
+}

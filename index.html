@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="./file/makaElementEffect.v2.css">
   <link rel="stylesheet" href="./file/animationOnAndOut.v1.css">
   <link href="./file/main.css" rel="stylesheet">
+  <link href="./file/index.css" rel="stylesheet">
   <script>
     window.viewerConfig = { "jsonHost": "//res.maka.im/", "apiHost": "//api.maka.im/", "imgHost": "//img1.maka.im/", "musicHost": "//res.maka.im/", "resHost": "//res.maka.im/", "fontHost": "//font.maka.im/", "env": "production" }
     window.projectVersion = { "id": "T_EDVLJAKH", "uid": 2443287, "title": "", "p_version": "105", "status": "pass", "thumb": "https://img1.maka.im/user/2443287/images/393e60d77acf734d38b27eb258b754fd.jpg@0-0-640-640a", "is_delete": 0, "type": "H5", "detail_type_name": "", "json_url": "https://res.maka.im/user/2443287/template/T_EDVLJAKH/T_EDVLJAKH_v105.json", "capture": "https://img1.maka.im/user/2443287/poster/T_EDVLJAKH/T_EDVLJAKH_v105.jpg", "vip_config": {}, "wx_thumb": "https://img1.maka.im/user/2443287/images/393e60d77acf734d38b27eb258b754fd.jpg@0-0-640-640a", "isnodeproxy": false, "showad": false, "isTempOffline": false, "pcViewerUrl": "https://maka.im/pcviewer/undefined/T_EDVLJAKH", "canonical": "https://maka.im/viewer/undefined/T_EDVLJAKH" }
@@ -53,6 +54,32 @@
         display: none
       }
     }
+
+    .fullPage-wp {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    .fullPage-wp:after {
+      display: block;
+      content: ' ';
+      height: 0;
+      clear: both;
+    }
+
+    .fullPage-wp.anim {
+      -webkit-transition: all 500ms ease-out 0s;
+      transition: all 500ms ease-out 0s;
+    }
+
+    .fullPage-page {
+      display: block;
+      overflow: hidden;
+    }
+
+    .fullPage-dir-h {
+      float: left;
+    }
   </style>
 </head>
 
@@ -62,15 +89,10 @@
 
 <body>
 
-
-
-  <div class="maka-canvas"
-    style="width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white;">
-
-
+  <div class="maka-canvas">
     <!-----所有page的页面---->
-    <div class="maka-pages" id="maka-pages">
-      <div class="maka-page maka-page-0">
+    <div class="wp-inner">
+      <div class="page page0">
         <div class="page-bg-0"
           style="position: absolute; width: 423.492px; height: 667px; top: 50%; left: 50%; margin-left: -211.746px; margin-top: -333.5px; overflow: hidden; background-color: rgb(156, 44, 38); opacity: 1;">
         </div>
@@ -243,7 +265,7 @@
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-1">
+      <div class="page page1">
         <div class="page-bg-1"
           style="position: absolute;width: 423.492px;height: 667px;top: 50%;left: 50%;margin-left: -211.746px;margin-top: -333.5px;overflow: hidden;background-color: rgb(255, 255, 255);opacity: 1;">
         </div>
@@ -309,81 +331,64 @@
           <div ele-id="29" class="rotateZ0"
             style="width: 375px; height: 726.562px; left: 0px; top: -70.3125px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
             <div class="animated"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/906a03304c71da57972d5d29ee110168.jpg?x-oss-process=image/crop,x_0,y_0,w_640,h_1240/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 375px 726.562px; background-position: center center; display: none; animation: 700ms linear 1000ms 1 normal both running zoomIn;">
-              <img src="./file/906a03304c71da57972d5d29ee110168(1).jpg" style="opacity: 0;"
-                class="__web-inspector-hide-shortcut__"></div>
+              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; width: 100%; height: 100%; animation: 700ms linear 1000ms 1 normal both running zoomIn;">
+              <img src="./file/906a03304c71da57972d5d29ee110168(1).jpg" style=" width: 100%; height: 100%;"></div>
           </div>
           <div ele-id="30" class="rotateZ0"
             style="width: 375px; height: 308.789px; left: 0.414806px; top: 346.875px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
             <div class="animated"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/c96261a849f9e342a75fc504908205ce.png?x-oss-process=image/crop,x_0,y_0,w_640,h_527/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 375px 308.789px; background-position: center center; display: none; animation: 1000ms linear 2000ms 1 normal both running fadeInNormal;">
-              <img src="./file/c96261a849f9e342a75fc504908205ce(1).png" style="opacity: 0;"></div>
+              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; width: 100%;height: 308px;  animation: 1000ms linear 2000ms 1 normal both running fadeInNormal;">
+              <img src="./file/c96261a849f9e342a75fc504908205ce(1).png" style="width: 100%; height: 100%;"></div>
           </div>
-          <div ele-id="31" class="rotateZ0"
-            style="width: 346.875px; height: 121.875px; left: 14.4773px; top: 401.409px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/8b0ec53ed7387993ac3c431701542b9d.png?x-oss-process=image/crop,x_0,y_0,w_592,h_208/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 346.875px 121.875px; background-position: center center; display: none; animation: 1000ms linear 1500ms 1 normal both running zoomIn;">
-              <img src="./file/8b0ec53ed7387993ac3c431701542b9d(1).png" style="opacity: 0;"></div>
+          <div ele-id="31" class="rotateZ0 ele ele31">
+            <div class="animated">
+              <img src="./file/8b0ec53ed7387993ac3c431701542b9d(1).png">
+            </div>
           </div>
-          <div ele-id="32" class="rotateZ0"
-            style="width: 21.0938px; height: 21.6797px; left: 263.501px; top: 498.088px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated fade"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/6a31f70ec1de3267680c11a904bc378f.png?x-oss-process=image/crop,x_0,y_0,w_36,h_37/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 21.0938px 21.6797px; background-position: center center; display: none; animation: 1000ms linear 0ms infinite normal both running fade;">
-              <img src="./file/6a31f70ec1de3267680c11a904bc378f(1).png" style="opacity: 0;"></div>
+          <div ele-id="32" class="rotateZ0 ele ele32">
+            <div class="animated fade">
+              <img src="./file/6a31f70ec1de3267680c11a904bc378f(1).png"></div>
           </div>
-          <div ele-id="33" class="rotateZ0"
-            style="width: 24.0234px; height: 22.8516px; left: 221.313px; top: 497.502px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated fade"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/008e4a4b426cbf881123f119bf585827.png?x-oss-process=image/crop,x_0,y_0,w_41,h_39/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 24.0234px 22.8516px; background-position: center center; display: none; animation: 1000ms linear 0ms infinite normal both running fade;">
-              <img src="./file/008e4a4b426cbf881123f119bf585827(1).png" style="opacity: 0;"></div>
+          <div ele-id="33" class="rotateZ0 ele ele33">
+            <div class="animated fade">
+              <img src="./file/008e4a4b426cbf881123f119bf585827(1).png"></div>
           </div>
-          <div ele-id="34" class="rotateZ0"
-            style="width: 23.4375px; height: 22.2656px; left: 180.884px; top: 497.502px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated fade"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/7fe473336326ff1950bf783040556500.png?x-oss-process=image/crop,x_0,y_0,w_40,h_38/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 23.4375px 22.2656px; background-position: center center; display: none; animation: 1000ms linear 0ms infinite normal both running fade;">
-              <img src="./file/7fe473336326ff1950bf783040556500(1).png" style="opacity: 0;"></div>
+          <div ele-id="34" class="rotateZ0 ele ele34">
+            <div class="animated fade">
+              <img src="./file/7fe473336326ff1950bf783040556500(1).png"></div>
           </div>
-          <div ele-id="35" class="rotateZ0"
-            style="width: 24.0234px; height: 22.8516px; left: 139.868px; top: 497.502px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated fade"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/ce3beaff8c359375b37f11c09b441187.png?x-oss-process=image/crop,x_0,y_0,w_41,h_39/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 24.0234px 22.8516px; background-position: center center; display: none; animation: 1000ms linear 0ms infinite normal both running fade;">
-              <img src="./file/ce3beaff8c359375b37f11c09b441187(1).png" style="opacity: 0;"></div>
+          <div ele-id="35" class="rotateZ0 ele ele35">
+            <div class="animated fade">
+              <img src="./file/ce3beaff8c359375b37f11c09b441187(1).png"></div>
           </div>
-          <div ele-id="36" class="rotateZ0"
-            style="width: 24.0234px; height: 22.8516px; left: 98.8523px; top: 497.502px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated fade"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/5b31e8673da788bb41619bd6da87f834.png?x-oss-process=image/crop,x_0,y_0,w_41,h_39/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 24.0234px 22.8516px; background-position: center center; display: none; animation: 1000ms linear 0ms infinite normal both running fade;">
-              <img src="./file/5b31e8673da788bb41619bd6da87f834(1).png" style="opacity: 0;"></div>
+          <div ele-id="36" class="rotateZ0 ele ele36">
+            <div class="animated fade">
+              <img src="./file/5b31e8673da788bb41619bd6da87f834(1).png"></div>
           </div>
-          <div ele-id="37" class="rotateZ0"
-            style="width: 52.1484px; height: 46.2891px; left: 161.548px; top: 345.745px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated scaleDown"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/fcacb635480f539ee3330f302735899c.png?x-oss-process=image/crop,x_0,y_0,w_89,h_79/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 52.1484px 46.2891px; background-position: center center; display: none; animation: 2000ms linear 0ms infinite normal both running scaleDown;">
-              <img src="./file/fcacb635480f539ee3330f302735899c(1).png" style="opacity: 0;"></div>
+          <div ele-id="37" class="rotateZ0">
+            <div class="animated scaleDown">
+              <img src="./file/fcacb635480f539ee3330f302735899c(1).png"></div>
           </div>
-          <div ele-id="38" class="rotateZ0"
-            style="width: 18.1641px; height: 16.9922px; left: 179.126px; top: 358.049px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated scaleDown"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/0c3e19668477e46af2f366c6cbea0296.png?x-oss-process=image/crop,x_0,y_0,w_31,h_29/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 18.1641px 16.9922px; background-position: center center; display: none; animation: 2000ms linear 0ms infinite normal both running scaleDown;">
-              <img src="./file/0c3e19668477e46af2f366c6cbea0296(1).png" style="opacity: 0;"></div>
+          <div ele-id="38" class="rotateZ0">
+            <div class="animated scaleDown">
+              <img src="./file/0c3e19668477e46af2f366c6cbea0296(1).png"></div>
           </div>
           <div ele-id="39" class="rotateZ0"
             style="width: 286.523px; height: 9.375px; left: 46.1179px; top: 561.37px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/3390b8121e1c44fc00e00ec0dc63b2e9.png?x-oss-process=image/crop,x_0,y_0,w_489,h_16/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 286.523px 9.375px; background-position: center center; display: none; animation: 1000ms linear 4000ms 1 normal both running zoomIn;">
-              <img src="./file/3390b8121e1c44fc00e00ec0dc63b2e9(1).png" style="opacity: 0;"></div>
+            <div class="animated" style="nimation: 1000ms linear 4000ms 1 normal both running zoomIn;">
+              <img src="./file/3390b8121e1c44fc00e00ec0dc63b2e9(1).png"></div>
           </div>
           <div ele-id="40" class="rotateZ0"
             style="width: 22.8516px; height: 21.6797px; left: 60.7664px; top: 509.221px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
             <div class="animated swingX"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/275946d82f70f92f091de2886280afd7.png?x-oss-process=image/crop,x_0,y_0,w_39,h_37/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 22.8516px 21.6797px; background-position: center center; display: none; transform: none; animation: 2000ms linear 0ms infinite normal both running swingX;">
-              <img src="./file/275946d82f70f92f091de2886280afd7(1).png" style="opacity: 0;"></div>
+              style="transform: none; animation: 2000ms linear 0ms infinite normal both running swingX;">
+              <img src="./file/275946d82f70f92f091de2886280afd7(1).png"></div>
           </div>
           <div ele-id="41" class="rotateZ0"
             style="width: 14.6484px; height: 14.6484px; left: 290.454px; top: 489.299px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
             <div class="animated rotateWise"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/e932056c04b4ba912b0645437247536e.png?x-oss-process=image/crop,x_0,y_0,w_25,h_25/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 14.6484px 14.6484px; background-position: center center; display: none; transform: none; animation: 2000ms linear 0ms infinite normal both running rotateWise;">
-              <img src="./file/e932056c04b4ba912b0645437247536e(1).png" style="opacity: 0;"></div>
+              style="transform: none; animation: 2000ms linear 0ms infinite normal both running rotateWise;">
+              <img src="./file/e932056c04b4ba912b0645437247536e(1).png"></div>
           </div>
           <div ele-id="42" class="rotateZ0"
             style="position: absolute; width: 118.043px; height: 36.2203px; top: 348.249px; left: 36.3385px; transform: rotate(0deg); transform-origin: center center; opacity: 1;">
@@ -401,25 +406,23 @@
           </div>
           <div ele-id="44" class="rotateZ0"
             style="width: 60.9375px; height: 59.7656px; left: 83.6179px; top: 278.282px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated fade"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/c6477dd1c1047fd5b5fa04ece7f152cb.png?x-oss-process=image/crop,x_0,y_0,w_0,h_0/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 60.9375px 59.7656px; background-position: center center; display: none; animation: 1500ms linear 0ms infinite normal both running fade;">
-              <img src="./file/c6477dd1c1047fd5b5fa04ece7f152cb(2).png" style="opacity: 0;"></div>
+            <div class="animated fade" style="animation: 1500ms linear 0ms infinite normal both running fade;">
+              <img src="./file/c6477dd1c1047fd5b5fa04ece7f152cb(2).png"></div>
           </div>
           <div ele-id="45" class="rotateZ0"
             style="width: 97.2656px; height: 64.4531px; left: 280.47px; top: 213.829px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
-            <div class="animated scaleDown"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/81733d93dbc4c850504fb217e89092ee.png?x-oss-process=image/crop,x_0,y_0,w_0,h_0/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 97.2656px 64.4531px; background-position: center center; display: none; transform: none; animation: 1000ms linear 0ms infinite normal both running scaleDown;">
-              <img src="./file/81733d93dbc4c850504fb217e89092ee(1).png" style="opacity: 0;"></div>
+            <div class="animated scaleDown" style="nimation: 1000ms linear 0ms infinite normal both running scaleDown;">
+              <img src="./file/81733d93dbc4c850504fb217e89092ee(1).png"></div>
           </div>
           <div ele-id="46" class="rotateZ0"
             style="width: 46.1931px; height: 45.3047px; left: 272.112px; top: 393.394px; position: absolute; opacity: 1; transform: rotate(33deg); cursor: pointer;">
             <div class="animated rotateWise"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/c6477dd1c1047fd5b5fa04ece7f152cb.png?x-oss-process=image/crop,x_0,y_0,w_104,h_102/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 46.1931px 45.3047px; background-position: center center; display: none; transform: none; animation: 1700ms linear 0ms infinite normal both running rotateWise;">
-              <img src="./file/c6477dd1c1047fd5b5fa04ece7f152cb(3).png" style="opacity: 0;"></div>
+              style="animation: 1700ms linear 0ms infinite normal both running rotateWise;">
+              <img src="./file/c6477dd1c1047fd5b5fa04ece7f152cb(3).png"></div>
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-2">
+      <div class="page page2">
         <div class="page-bg-2"
           style="position: absolute; width: 423.492px; height: 667px; top: 50%; left: 50%; margin-left: -211.746px; margin-top: -333.5px; overflow: hidden; background-color: rgb(255, 255, 255); opacity: 1;">
         </div>
@@ -590,7 +593,7 @@
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-3">
+      <div class="page page3">
         <div class="page-bg-3"
           style="position: absolute;width: 423.492px;height: 667px;top: 50%;left: 50%;margin-left: -211.746px;margin-top: -333.5px;overflow: hidden;background-color: rgb(255, 255, 255);opacity: 1;">
         </div>
@@ -761,7 +764,7 @@
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-4">
+      <div class="page page4">
         <div class="page-bg-4"
           style="position: absolute; width: 423.492px; height: 667px; top: 50%; left: 50%; margin-left: -211.746px; margin-top: -333.5px; overflow: hidden; background-color: rgb(255, 255, 255); opacity: 1;">
         </div>
@@ -882,7 +885,7 @@
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-5">
+      <div class="page page5">
         <div class="page-bg-5"
           style="position: absolute; width: 423.492px; height: 667px; top: 50%; left: 50%; margin-left: -211.746px; margin-top: -333.5px; overflow: hidden; background-color: rgb(255, 255, 255); opacity: 1;">
         </div>
@@ -1069,7 +1072,7 @@
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-6">
+      <div class="page page6">
         <div class="page-bg-6"
           style="position: absolute; width: 423.492px; height: 667px; top: 50%; left: 50%; margin-left: -211.746px; margin-top: -333.5px; overflow: hidden; background-color: rgb(255, 255, 255); opacity: 1;">
         </div>
@@ -1241,7 +1244,7 @@
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-7">
+      <div class="page page7">
         <div class="page-bg-7"
           style="position: absolute; width: 423.492px; height: 667px; top: 50%; left: 50%; margin-left: -211.746px; margin-top: -333.5px; overflow: hidden; background-color: rgb(255, 255, 255); opacity: 1;">
         </div>
@@ -1407,7 +1410,7 @@
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-8">
+      <div class="page page8">
         <div class="page-bg-8"
           style="position: absolute; width: 423.492px; height: 667px; top: 50%; left: 50%; margin-left: -211.746px; margin-top: -333.5px; overflow: hidden; background-color: rgb(255, 255, 255); opacity: 1;">
         </div>
@@ -1654,7 +1657,7 @@
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-9">
+      <div class="page page9">
         <div class="page-bg-9"
           style="position: absolute; width: 423.492px; height: 667px; top: 50%; left: 50%; margin-left: -211.746px; margin-top: -333.5px; overflow: hidden; background-color: rgb(255, 255, 255); opacity: 1;">
         </div>
@@ -1793,7 +1796,7 @@
           </div>
         </div>
       </div>
-      <div class="maka-page maka-page-10">
+      <div class="page page10">
         <div class="page-bg-10"
           style="position: absolute; width: 423.492px; height: 667px; top: 50%; left: 50%; margin-left: -211.746px; margin-top: -333.5px; overflow: hidden; background-color: rgb(255, 255, 255); opacity: 1;">
         </div>
@@ -1859,19 +1862,19 @@
           <div ele-id="189" class="rotateZ0"
             style="width: 375px; height: 726.562px; left: 0px; top: -70.3125px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
             <div class="animated"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/d6b3325f0b408ad4571008f394c04d78.jpg?x-oss-process=image/crop,x_3,y_0,w_631,h_1224/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 375px 727.417px; background-position: center center; display: block; animation: 700ms linear 1000ms 1 normal both running flipInX;">
+              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; width: 100%;height: 100%; display: block; animation: 700ms linear 1000ms 1 normal both running flipInX;">
               <img src="./file/d6b3325f0b408ad4571008f394c04d78.jpg" style="opacity: 0;"></div>
           </div>
           <div ele-id="190" class="rotateZ0"
             style="width: 445.952px; height: 299.006px; left: -35.1984px; top: 358.291px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
             <div class="animated"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/7a2e64514749bfe9c434bfac3c076ad9.png?x-oss-process=image/crop,x_18,y_1,w_710,h_476/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 445.996px 299.006px; background-position: center center; display: block; animation: 1000ms linear 1000ms 1 normal both running fadeInUp;">
+              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; width: 446px; height: 300px;display: block; animation: 1000ms linear 1000ms 1 normal both running fadeInUp;">
               <img src="./file/7a2e64514749bfe9c434bfac3c076ad9(1).png" style="opacity: 0;"></div>
           </div>
           <div ele-id="191" class="rotateZ0"
             style="width: 142.876px; height: 22.9307px; left: 116.201px; top: 410.194px; position: absolute; opacity: 1; transform: rotate(0deg); cursor: pointer;">
             <div class="animated"
-              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; background-image: url(&quot;https://img1.maka.im/user/2443287/images/8f2221feba578ad35a53d8b722146db8.png?x-oss-process=image/crop,x_0,y_0,w_162,h_26/auto-orient,1/format,webp/quality,Q_100&quot;); background-repeat: no-repeat; background-size: 142.876px 22.9307px; background-position: center center; display: block; animation: 1000ms linear 1500ms 1 normal both running flipInY;">
+              style="position: absolute; width: 100%; height: 100%; overflow: hidden; border-radius: 0px; box-shadow: black 0px 0px 0px; width: 142px; height: 22px;display: block; animation: 1000ms linear 1500ms 1 normal both running flipInY;">
               <img src="./file/8f2221feba578ad35a53d8b722146db8.png" style="opacity: 0;"></div>
           </div>
           <div ele-id="192" class="rotateZ0"
@@ -1948,52 +1951,51 @@
 
     <div class="maka-Arrow" style="display: block;">
       <img
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAkCAMAAADip6m2AAAAolBMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAHBwcAAAD////9/f37+/vt7e25ubn39/cKCgrz8/Pe3t7c3Nz+/v729vbW1tZra2tKSkoAAABpaWlgYGD9/f38/Pz5+fn5+fn39/fz8/Px8fHu7u7q6urm5ubj4+Pd3d3y8vLX19fJycnAwMC4uLisrKyhoaGVlZWGhoajo6MpKSkxMTGAgID///9oDYyzAAAANXRSTlMAAwcLFR0SGRAO+efJbSOcIqBDQvLNbTEpGxEQ9e3h29XDvLOsnJOJiIFpYVlNRkE7MiwfDLl52bwAAAGFSURBVEjH3ZXZboMwFERbHAMhC6EFQtrs+777/3+t98bGjmwqy32plHmLPYfMiYTy9nJ5F/kb693j+O4h7Y567SZjzbYHuDv72WCQxgfSjixpReyRqEWAdmK/YyaTfAHtpivjIo6TUReTZYxxcZzupju/XufP4g660aYD2USmuF13sKeP7Ae6uF13fKZBDRLQ81gTt+rOCmD9MPSBLmaauEV3hWidQOqIr57FLbrpDllCPAghSO9SU7xad3QCNiRQgwAeAn0a6eLVutOC4mRk+SCcToupIW7qsmWnByw25B3Svc6SaeKGbn9LA8UqGsW3fVMc2VJ3eJS6apcUPw5LcVmAq1J30qWBL1mN9gPanZTiUBE3pe5C6cpo4gtRjXkJjtf8cbnSlTHEcz5yTTwBh00UOVToVogfGvibhQq+pCyr0q0Wz1h6kTDsyZObPvn36bckh6qA8YE1eIUEa6GxyyeKEzhC1MLy6byL3yNP4BNn7TSWVRffHYHaI7qq7PB3qMr/mh8s20b2bOZlXQAAAABJRU5ErkJggg=="
-        alt="">
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAkCAMAAADip6m2AAAAolBMVEUAAAAAAAAAAAAAAAAAAAABAQEAAAAAAAAHBwcAAAD////9/f37+/vt7e25ubn39/cKCgrz8/Pe3t7c3Nz+/v729vbW1tZra2tKSkoAAABpaWlgYGD9/f38/Pz5+fn5+fn39/fz8/Px8fHu7u7q6urm5ubj4+Pd3d3y8vLX19fJycnAwMC4uLisrKyhoaGVlZWGhoajo6MpKSkxMTGAgID///9oDYyzAAAANXRSTlMAAwcLFR0SGRAO+efJbSOcIqBDQvLNbTEpGxEQ9e3h29XDvLOsnJOJiIFpYVlNRkE7MiwfDLl52bwAAAGFSURBVEjH3ZXZboMwFERbHAMhC6EFQtrs+777/3+t98bGjmwqy32plHmLPYfMiYTy9nJ5F/kb693j+O4h7Y567SZjzbYHuDv72WCQxgfSjixpReyRqEWAdmK/YyaTfAHtpivjIo6TUReTZYxxcZzupju/XufP4g660aYD2USmuF13sKeP7Ae6uF13fKZBDRLQ81gTt+rOCmD9MPSBLmaauEV3hWidQOqIr57FLbrpDllCPAghSO9SU7xad3QCNiRQgwAeAn0a6eLVutOC4mRk+SCcToupIW7qsmWnByw25B3Svc6SaeKGbn9LA8UqGsW3fVMc2VJ3eJS6apcUPw5LcVmAq1J30qWBL1mN9gPanZTiUBE3pe5C6cpo4gtRjXkJjtf8cbnSlTHEcz5yTTwBh00UOVToVogfGvibhQq+pCyr0q0Wz1h6kTDsyZObPvn36bckh6qA8YE1eIUEa6GxyyeKEzhC1MLy6byL3yNP4BNn7TSWVRffHYHaI7qq7PB3qMr/mh8s20b2bOZlXQAAAABJRU5ErkJggg==">
     </div>
     <audio loop="" src="https://res2.maka.im/user/2443287/music/436015_a0731e8846f5a048420f6d9ba122026e.mp3"
       id="bgmedia" preload=""></audio>
-  </div>
 
-  <div id="hiddenText" style="position:fixed;top:-100px;z-index:-999;"></div>
 
-  <script src="./js/js.fullpage.js"></script>
-  <img class="stopAnimation" src="./file/music_icon.png">
-  <script>
-        document.getElementsByClassName('maka-pages')[0].fullpage({
-          change: function (e) {
-            clearTime()
-            // 移除动画属性
-            forEach.call(document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate'), function (v) {
-              v.classList.add('hide');
-              v.classList.remove(v.dataset['animate']);
-              if (v.dataset['sec']) {
-                v.classList.remove(v.dataset['sec']);
-              }
-            });
-          },
-          afterChange: function (e) {
-            if (e.cur === 5 && !mapFlag) {
-              initMap()
+    <div id="hiddenText" style="position:fixed;top:-100px;z-index:-999;"></div>
+
+    <script src="./js/js.fullpage.js"></script>
+    <img class="stopAnimation" src="./file/music_icon.png">
+    <script>
+      var forEach = [].forEach;
+      document.getElementsByClassName('wp-inner')[0].fullpage({
+        change: function (e) {
+          // 移除动画属性
+          forEach.call(document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate'), function (v) {
+            v.classList.add('hide');
+            v.classList.remove(v.dataset['animate']);
+            if (v.dataset['sec']) {
+              v.classList.remove(v.dataset['sec']);
             }
-
-            domLists = document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate')
-            forEach.call(domLists, v => {
-              var time = v.dataset.time;
-              v.timer = setTimeout(function () {
-                v.classList.add(v.dataset['animate']);
-                v.classList.remove('hide');
-                if (v.dataset['sec']) {
-                  var time = v.dataset.sectime || 0
-                  v.sectimer = setTimeout(function () {
-                    v.classList.remove(v.dataset['animate']);
-                    v.classList.add(v.dataset['sec']);
-                  }, time);
-                }
-              }, time);
-            })
+          });
+        },
+        afterChange: function (e) {
+          if (e.cur === 5 && !mapFlag) {
+            initMap()
           }
-        });
+
+          domLists = document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate')
+          forEach.call(domLists, v => {
+            var time = v.dataset.time;
+            v.timer = setTimeout(function () {
+              v.classList.add(v.dataset['animate']);
+              v.classList.remove('hide');
+              if (v.dataset['sec']) {
+                var time = v.dataset.sectime || 0
+                v.sectimer = setTimeout(function () {
+                  v.classList.remove(v.dataset['animate']);
+                  v.classList.add(v.dataset['sec']);
+                }, time);
+              }
+            }, time);
+          })
+        }
+      });
     // document.getElementsByClassName('maka-page-0')[0].style.display = 'block'
     // // document.querySelector("div[ele-id='2']").children[0].style.display = 'block'
     // var ELEID = 2;
@@ -2005,7 +2007,8 @@
     //   document.querySelector(`div[ele-id='${ELEID}']`).children[0].style.display = 'block'
     //   // document.querySelector(`div[ele-id=${ELEID}]`).children[0].style.display = 'block'
     // }, 1500)
-  </script>
+    </script>
+  </div>
 </body>
 
 </html>
